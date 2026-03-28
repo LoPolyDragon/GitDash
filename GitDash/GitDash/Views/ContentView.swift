@@ -20,6 +20,7 @@ struct ContentView: View {
                     DetailView(selectedTab: selectedTab)
                         .environmentObject(viewModel)
                 }
+                .frame(minWidth: 600, minHeight: 550)
             } else {
                 WelcomeView()
             }
