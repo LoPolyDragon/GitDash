@@ -31,7 +31,7 @@ enum GitFileStatusType: String {
     }
 }
 
-struct GitFileStatus: Identifiable, Equatable {
+struct GitFileStatus: Identifiable, Equatable, Hashable {
     let id = UUID()
     let path: String
     let statusType: GitFileStatusType
