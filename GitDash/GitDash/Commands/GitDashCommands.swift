@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GitDashCommands: Commands {
-    @FocusedBinding(\.appState) var appState: AppState?
+    @FocusedValue(\.appState) var appState: AppState?
 
     var body: some Commands {
         CommandGroup(replacing: .newItem) {
